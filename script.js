@@ -43,3 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+
+// Expandable gallery details
+document.querySelectorAll(".gallery-toggle").forEach(toggle => {
+  toggle.addEventListener("click", () => {
+    const parent = toggle.closest(".gallery-item");
+    parent.classList.toggle("active");
+  });
+});
+
