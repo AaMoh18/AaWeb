@@ -425,3 +425,36 @@ section:not(#about)::before {
   height: 100%;
 }
 
+/* SKILLS SECTION */
+.skills-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill {
+  background: var(--card-bg);
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Light mode styles */
+.light-mode .skill {
+  background: #f0f0f0;
+  border-color: var(--accent);
+  color: var(--primary);
+}
