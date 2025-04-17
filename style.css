@@ -492,4 +492,22 @@ section:not(#about)::before {
   color: var(--text-color);
   text-align: center;
 }
+.gallery-item {
+  margin-bottom: 1.5rem;
+}
+
+.gallery-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0 1rem;
+  border-left: 3px solid #5e5e5e;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.gallery-item.active .gallery-details {
+  max-height: 300px; /* Adjust as needed */
+  padding: 1rem;
+}
 
